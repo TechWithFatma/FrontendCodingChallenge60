@@ -1,0 +1,138 @@
+/* reset style */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* general style */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+::selection {
+    background: #a4b0be;
+    color: #fff;
+}
+
+
+/* layout style */
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+/* main style */
+
+.card {
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* icons style */
+
+.icons-img {
+    position: absolute;
+    top: 39%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    gap: 320px;
+}
+
+.icons-img i {
+    transform: translateY(-100%);
+    font-size: 1.5rem;
+    display: flex;
+    color: #fff;
+}
+
+
+/* content style */
+
+.content {
+    display: block;
+    padding: 10px 20px;
+    color: #57606f;
+}
+
+.content h1 {
+    color: #2f3542;
+    font-weight: 700;
+}
+
+
+/* cup section */
+
+.box {
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+.title {
+    margin: 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-flex {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-container {
+    display: flex;
+    gap: 20px;
+}
+
+.box {
+    padding: 10px;
+}
+
+.bg {
+    background: #747d8c;
+    color: #fff;
+    font-size: 15px;
+}
+
+
+/* price */
+
+.price {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.price-container {
+    /* padding: 10px; */
+    font-size: 15px;
+}
+
+.btn {
+    padding: 2px 20px;
+    border: none;
+    color: white;
+    background: #57606f;
+    border-radius: 10px;
+}
