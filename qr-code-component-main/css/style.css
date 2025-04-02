@@ -1,5 +1,31 @@
+/* reset style */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+
+/* root style */
+
+:root {
+    --bg-color: hsl(212, 45%, 89%);
+    --para-color: hsl(216, 15%, 48%);
+    --title-color: hsl(218, 44%, 22%);
+}
+
+
+/* general style */
+
 body {
-    background-color: hsl(212, 45%, 89%);
+    height: 100vh;
+    width: 100vw;
+    line-height: 1.5;
+}
+
+.wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,12 +33,12 @@ body {
 }
 
 .card {
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 280px;
+    padding: 10px 20px;
+    width: 400px;
+    height: 80vh;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: slide-left 4s forwards;
 }
 
 .card img {
@@ -21,13 +47,26 @@ body {
 }
 
 .card h2 {
-    font-size: 18px;
-    color: hsl(218, 44%, 22%);
-    margin: 15px 0;
-    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+    color: var(--title-color);
+    margin: 8px 0;
 }
 
 .card p {
+    padding: 8px;
     font-size: 15px;
-    color: hsl(216, 15%, 48%);
+    color: var(--para-color);
+}
+
+
+/* animation */
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
 }
