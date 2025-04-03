@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    padding: 10px 20px;
+    background: dodgerblue;
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 50vh;
+}
+
+button {
+    color: white;
+    padding: 8px 20px;
+    border: none;
+}
+
+.btn-click {
+    background: crimson;
+}
+
+.btn-visit {
+    border: 2px solid lightgreen;
+    color: black;
+    background: transparent;
+    /* background: lightgreen; */
+}
