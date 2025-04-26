@@ -1,0 +1,161 @@
+.trusted-experts {
+    margin: -120px 20px 0;
+    position: relative;
+    // z-index: 0;
+    .box-trusted {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 40px;
+    }
+    .content-trusted {
+        width: 90%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+        h1 {
+            font-size: 1.5rem;
+            &::before {
+                // content: '✓';
+                content: '\2713';
+                color: white;
+                background-color: dodgerblue;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                font-size: 24px;
+            }
+        }
+        p {
+            font-size: 1rem;
+            margin-top: -20px;
+            padding: 0;
+        }
+    }
+    // &::after {
+    //     content: "";
+    //     position: absolute;
+    //     bottom: -30px;
+    //     height: 100px;
+    //     right: 0;
+    //     left: 0;
+    //     background: #ccc;
+    //     border-radius: 100% 100% 0 0;
+    // }
+    @media (max-width:768px) {
+        .content-trusted {
+            width: 90%;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 10px;
+            h1 {
+                font-size: .9rem;
+                &::before {
+                    // content: '✓';
+                    content: '\2713';
+                    color: white;
+                    background-color: dodgerblue;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    font-size: 24px;
+                }
+            }
+            p {
+                font-size: 0.9rem;
+                // margin-top: -20px;
+                padding: 0;
+            }
+        }
+    }
+}
+
+.about-section {
+    padding: 10px;
+    position: relative;
+    margin-top: 20px;
+    .about-us {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 10px;
+        .about-img {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+        }
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            // align-items: center;
+            flex-direction: column;
+            padding-left: 20px;
+            h1,
+            h3,
+            p {
+                margin: 0;
+                padding: 3px;
+            }
+            h1 {
+                font-size: 1.5rem;
+                color: dodgerblue;
+            }
+            h3 {
+                font-size: 2.5rem;
+            }
+            p {
+                max-width: 400px;
+                font-size: 1rem;
+            }
+            .btn-read {
+                width: 15%;
+                background-color: dodgerblue;
+                color: #fff;
+                border-radius: 40px;
+            }
+        }
+    }
+    @media (max-width:768px) {
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 20px;
+            h1,
+            p {
+                margin: 0;
+                padding: 3px;
+            }
+            h1 {
+                text-align: center;
+                font-size: 1.5rem;
+                color: dodgerblue;
+            }
+            .about-desc {
+                font-size: 0.3rem;
+            }
+            p {
+                max-width: 400px;
+                font-size: 1rem;
+            }
+            .btn-read {
+                display: none;
+                width: 100%;
+                background-color: dodgerblue;
+                color: #fff;
+                border-radius: 40px;
+                text-align: center;
+                padding: 10px 20px;
+                white-space: nowrap;
+                // display: inline-block;
+                align-self: center;
+            }
+        }
+    }
+}

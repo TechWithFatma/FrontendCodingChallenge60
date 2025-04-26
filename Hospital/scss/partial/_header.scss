@@ -1,0 +1,77 @@
+header {
+    position: relative;
+    padding: 10px;
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-around;
+        background-color: #fff;
+        width: 100%;
+        .log {
+            margin-top: 10px;
+            vertical-align: middle;
+        }
+        .menu-logger {
+            display: none;
+        }
+    }
+    .btn {
+        margin: 10px 0;
+        vertical-align: middle;
+        button {
+            background-color: dodgerblue;
+            color: white;
+            border: none;
+            padding: 1em;
+            border-radius: 40px;
+        }
+        i {
+            font-size: 1.4rem;
+            color: #fff;
+            vertical-align: middle;
+        }
+    }
+    .nav-list {
+        display: flex;
+        gap: 20px;
+        .active {
+            color: #000;
+            font-weight: bold;
+        }
+    }
+    @media (max-width:768px) {
+        .navbar {
+            display: flex;
+            padding: 10px 0;
+            justify-content: space-between;
+            .menu-toggle {
+                display: block;
+                background: none;
+                border: none;
+                font-size: 30px;
+            }
+            .logo {
+                color: 1.5rem;
+            }
+            .nav-list {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 80px;
+                right: 20px;
+                background: #fff;
+                padding: 10px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            }
+            .nav-list.active {
+                display: flex;
+            }
+        }
+        button,
+        .nav-list {
+            display: none;
+        }
+    }
+}

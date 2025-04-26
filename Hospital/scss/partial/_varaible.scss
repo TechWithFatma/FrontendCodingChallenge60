@@ -1,0 +1,59 @@
+$primary-color:#0fbcf9;
+$secondary-color:#fff;
+$font-family:georgia;
+$font-family2:papyrus;
+$color:#333;
+// general style
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h1,
+h2,
+h3 {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-family: $font-family;
+}
+
+button {
+    padding: 1em 2em;
+    border: none;
+    background-color: $primary-color;
+    color: $secondary-color;
+    border-radius: 40px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 1em 2em;
+    color: $color;
+}
+
+span {
+    color: hotpink;
+    font-family: $font-family2;
+}
+
+p {
+    font-size: 2.5rem;
+    font-family: $font-family2;
+}

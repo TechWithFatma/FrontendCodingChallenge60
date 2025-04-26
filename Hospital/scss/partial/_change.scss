@@ -1,0 +1,92 @@
+.change {
+    padding: 10px;
+    position: relative;
+    .change-health {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background: #0fbcf9;
+    }
+    .health-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: relative;
+        .health-content {
+            width: 500px;
+            padding: 10px 0;
+            h1 {
+                color: #fff;
+            }
+            p {
+                padding: 0;
+                margin: 0;
+                color: #fff;
+            }
+            button {
+                background-color: #fff;
+                color: #000;
+            }
+            .bx-right-arrow-alt {
+                background-color: dodgerblue;
+                color: white;
+                margin-left: 4px;
+                width: 30px;
+                height: auto;
+                border-radius: 50%;
+            }
+        }
+        img {
+            transform: translate(90px, -100px);
+        }
+    }
+    @media (max-width:768px) {
+        // .change{}
+        .change-health {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background: #0fbcf9;
+        }
+        .health-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: relative;
+            .health-content {
+                max-width: 800px;
+                padding: 10px 0;
+                h1 {
+                    text-align: center;
+                    color: #fff;
+                }
+                p {
+                    padding: 0;
+                    margin: 0;
+                    font-size: 1.5rem;
+                    color: #fff;
+                    text-align: center;
+                }
+                button {
+                    background-color: #fff;
+                    color: #000;
+                    margin-left: 10%;
+                }
+                .bx-right-arrow-alt {
+                    background-color: dodgerblue;
+                    color: white;
+                    margin-left: 4px;
+                    width: 30px;
+                    height: auto;
+                    border-radius: 50%;
+                }
+            }
+            img {
+                transform: translate(90px, -10px);
+            }
+        }
+    }
+}

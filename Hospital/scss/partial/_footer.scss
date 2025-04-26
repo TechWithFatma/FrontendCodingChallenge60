@@ -1,0 +1,81 @@
+footer {
+    position: relative;
+    .footer-container {
+        background: #1e90ff;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+    .quick-links {
+        display: flex;
+        justify-content: space-around;
+        color: #fff;
+        gap: 20px;
+        .logo-footer {
+            margin: 40px;
+            color: #fff;
+        }
+        .links {
+            text-transform: capitalize;
+            margin-bottom: 10px;
+        }
+        .address {
+            width: 400px;
+            padding: 10px;
+            margin: 0;
+            h1 {
+                text-align: center;
+            }
+        }
+    }
+    p {
+        text-align: center;
+        color: #fff;
+        font-size: 1.02rem;
+        font-family: Courier New;
+    }
+    @media (max-width:768px) {
+        .quick-links {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #fff;
+            gap: 20px;
+            .logo-footer {
+                display: none;
+                text-align: center;
+                color: #fff;
+            }
+            .res-cont {
+                display: flex;
+                gap: 20px;
+            }
+            .Email {
+                display: flex;
+                gap: 30px;
+            }
+            .gmail-para {
+                text-align: start;
+            }
+            .links {
+                text-transform: capitalize;
+                margin-bottom: 10px;
+            }
+            .address {
+                width: 400px;
+                padding: 10px;
+                margin: 0;
+                h1 {
+                    text-align: center;
+                }
+            }
+        }
+        .copy-right {
+            text-align: center;
+            color: #fff;
+            font-size: 1.02rem;
+            font-family: Courier New;
+        }
+    }
+}
